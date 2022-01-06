@@ -62,6 +62,7 @@ class Timeline extends Component {
       toggleTrackOpen,
       enableSticky = false,
       scrollToNow,
+      expandable,
     } = this.props
 
     const { time, timelineViewportWidth, sidebarWidth } = this.state
@@ -109,6 +110,7 @@ Timeline.propTypes = {
     minWidth: PropTypes.number,
   }),
   isOpen: PropTypes.bool,
+  expandable: PropTypes.bool,
   toggleOpen: PropTypes.func,
   zoomIn: PropTypes.func,
   zoomOut: PropTypes.func,
