@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import TrackKeys from '.'
 
 const TrackKey = ({ track, toggleOpen, clickTrackButton }) => {
-  const { title, tracks, isOpen, hasButton, sideComponent } = track
-  const isExpandable = isOpen !== undefined
+  const { title, tracks, isOpen, hasButton, sideComponent, expandable } = track
+  const isExpandable = expandable
 
   const buildSideComponent = () => {
     if (sideComponent) {
